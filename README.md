@@ -40,6 +40,7 @@ In the end, I create 56 interpretable statistical features. Here is an overview 
 Decomposable attention is a very standard solution to determine if two sentences are the same. In short, decomposable attention aligns the words in sent1 with the similar words in sent2.
 
 ![decomposable-attention](https://i.imgur.com/pKxL4Ih.png)
+
 Figure from [A Decomposable Attention Model for Natural Language Inference](https://arxiv.org/abs/1606.01933) 
 
 It helps a lot in this dataset since there are so many surface patterns which repeat again and again. For example:
@@ -84,6 +85,7 @@ To deal with these two weaknesses, I dig into another two models. The RNN model 
 In brief, I follow the spirit of Cafe and also propose other ideas that make it work better for this task.
 
 ![cafe](https://i.imgur.com/JKU0O4t.png)
+
 Figure from [ A Compare-Propagate Architecture with Alignment Factorization for Natural Language Inference](https://arxiv.org/abs/1801.00102)
 
 1. I replace the FM layer with MLP and mix all interactive features as a single vector. I found it work better when trying to change the FM part with DeepFM. In my opinion, it is because MLP can model the high-level interaction and can be regularized well with dropout.
@@ -118,6 +120,7 @@ I prepare three types of inputs for each model:
 2. Character level input. I follow the paper "Character-Aware Neural Language Models" to create the character level embedding. Here is the overview of its architecture.
 
 ![char-cnn](https://i.imgur.com/r58ISrE.png)
+
 Figure from [Character-Aware Neural Language Models](https://arxiv.org/abs/1508.06615)
 
 4. Word level input with meta-features. The meta-features are well-discussed in Feature Engineering. I concatenate them with the interactive features after a highway layer.
@@ -180,6 +183,7 @@ In [Extrapolation in NLP](https://arxiv.org/abs/1805.06648), they observe that a
 So how about removing this feature?  Based on the ablation study in Cafe, the concat feature plays a vital role for the model performance.
 
 ![ablation-study](https://i.imgur.com/vRD50D8.png)
+
 Table from [ A Compare-Propagate Architecture with Alignment Factorization for Natural Language Inference](https://arxiv.org/abs/1801.00102)
 
 To grasp both symmetry and the concat feature, I do it the concatenate operation twice. The first time is for [Sent1, Sent2] and the second time is for [Sent2, Sent1]. Finally, average these two results.
