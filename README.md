@@ -1,12 +1,12 @@
 # Closer
 
-This is part of my solution for CIKM AnalytiCUP 2018, a competition about short-text semantic similarity and knowledge transfer. 
+This is my solution to [ACM International Conference on Information and Knowledge Management (CIKM)](https://www.cikm2018.units.it/) AnalytiCUP 2018, a competition about short-text semantic similarity and knowledge transfer. 
 
 ## [Solution Manual](https://towardsdatascience.com/simtext-2nd-solution-for-cikm-analyticup-2018-b3347e026e67)
 
 ## [Slides for CIKM](https://docs.google.com/presentation/d/1G18FLBCf4PC22F1zlUN7ToFWG8YoOskQy5IP9cSpXfM/edit?usp=sharing)
 
-## [Datasets](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.71df72578p9z7A&raceId=231661&_lang=en_US)
+## [Datasets](https://tianchi.aliyun.com/competition/entrance/231661/information)
 
 ## Requirements
 
