@@ -4,9 +4,9 @@ This is my solution to [ACM International Conference on Information and Knowledg
 
 ![overview](https://i.imgur.com/cid6rIu.png)
 
-## [Documents]
+## Documents
 
-* [Solution (Chinese)](https://github.com/zake7749/Closer/cikm_report_to_alibaba.pdf)
+* [Solution (Chinese)](https://github.com/zake7749/Closer/blob/master/cikm_report_to_alibaba.pdf)
 * [Solution (English)](https://towardsdatascience.com/simtext-2nd-solution-for-cikm-analyticup-2018-b3347e026e67)
 * [Slides for CIKM](https://docs.google.com/presentation/d/1G18FLBCf4PC22F1zlUN7ToFWG8YoOskQy5IP9cSpXfM/edit?usp=sharing)
 
